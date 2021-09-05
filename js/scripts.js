@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const headerHeight = mainNav.clientHeight;
     window.addEventListener('scroll', function() {
         const currentTop = document.body.getBoundingClientRect().top * -1;
-        if ( currentTop < scrollPos) {
+        if ( currentTop < 0) {
             // Keeps the navbar at top of page instead of top of screen
             if (currentTop > 0 && mainNav.classList.contains('is-fixed')) {
                 mainNav.classList.add('is-visible');
