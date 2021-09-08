@@ -242,13 +242,21 @@ sup {
   top: -0.5em;
 }
 
+
+/*********************/
+/*Homepage Link Color*/
+/*********************/
 a {
-  color: #212529;
+  color: #ffffff;
   text-decoration: none;
 }
 a:hover {
-  color: #0085A1;
+  color: #adb5bd;
 }
+/*********************/
+/*Homepage Link Color*/
+/*********************/
+
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
@@ -646,31 +654,40 @@ progress {
   margin-left: auto;
 }
 
-@media (min-width: 576px) {
+/*************************/
+/*Shifting Container Size*/
+/*************************/
+@media (min-width: 600px) {
   .container-sm, .container {
-    max-width: 540px;
+    max-width: 700px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .container-md, .container-sm, .container {
-    max-width: 720px;
-  }
-}
-@media (min-width: 992px) {
-  .container-lg, .container-md, .container-sm, .container {
-    max-width: 960px;
+    max-width: 1200px;
   }
 }
 @media (min-width: 1200px) {
+  .container-lg, .container-md, .container-sm, .container {
+    max-width: 1300px;
+  }
+}
+@media (min-width: 1300px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1140px;
+    max-width: 1400px;
   }
 }
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1320px;
+    max-width: 1600px;
   }
 }
+/*************************/
+/*Shifting Container Size*/
+/*************************/
+
+
+
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -3992,7 +4009,7 @@ textarea.form-control-lg {
 .navbar-brand {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 1rem;
+  margin-right: 0rem;
   font-size: 1.25rem;
   white-space: nowrap;
 }
@@ -4178,7 +4195,7 @@ textarea.form-control-lg {
   }
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-left: 0.0rem;
   }
   .navbar-expand-lg .navbar-nav-scroll {
     overflow: visible;
